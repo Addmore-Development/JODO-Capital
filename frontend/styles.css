@@ -138,11 +138,14 @@ nav.primary a.current{color:var(--white); border-color:var(--gold-500);}
 
 @media (max-width:900px){
   nav.primary{
-    position:fixed; inset:64px 0 0 0; background:var(--navy-900);
+    position:fixed; top:64px; left:0; right:0; bottom:0;
+    height:calc(100vh - 64px); height:calc(100dvh - 64px);
+    background:var(--navy-900); overflow-y:auto;
     flex-direction:column; align-items:flex-start; gap:0;
     padding:12px 22px 30px; transform:translateY(-8px);
     opacity:0; pointer-events:none; transition:opacity .18s ease, transform .18s ease;
     border-top:1px solid var(--hairline-dark);
+    z-index:60;
   }
   nav.primary.open{opacity:1; pointer-events:auto; transform:translateY(0);}
   nav.primary a{width:100%; padding:14px 0; border-bottom:1px solid var(--hairline-dark);}
@@ -374,7 +377,17 @@ nav.primary a.current{color:var(--white); border-color:var(--gold-500);}
 .octagon-tile .oct-num{font-family:var(--serif); font-size:0.82rem; color:var(--gold-300); letter-spacing:0.08em; display:block; margin-bottom:10px;}
 .octagon-tile h3{color:var(--white); font-size:1.02rem; line-height:1.3; margin-bottom:0;}
 @media (max-width:900px){.octagon-tile{width:210px; height:210px;} .octagon-tile h3{font-size:0.92rem;}}
-@media (max-width:560px){.octagon-tile{width:170px; height:170px;} .octagon-tile .oct-content{padding:0 22px;} .octagon-tile h3{font-size:0.82rem;}}
+@media (max-width:640px){
+  .octagon-row{gap:14px; row-gap:14px;}
+  .octagon-tile{width:min(40vw,168px); height:min(40vw,168px);}
+  .octagon-tile .oct-content{padding:0 16px;}
+  .octagon-tile h3{font-size:0.78rem;}
+  .octagon-tile .oct-num{font-size:0.72rem; margin-bottom:6px;}
+}
+@media (max-width:360px){
+  .octagon-tile{width:min(40vw,140px); height:min(40vw,140px);}
+  .octagon-tile h3{font-size:0.7rem;}
+}
 
 /* ---------- Section scaffolding ---------- */
 section{padding:86px 0;}
@@ -399,6 +412,14 @@ section{padding:86px 0;}
 @media (min-width:901px){.grid-3.grid-2x2{grid-template-columns:repeat(2,1fr);}}
 @media (max-width:900px){
   .grid-2,.grid-3,.grid-4{grid-template-columns:1fr;}
+}
+@media (max-width:720px){
+  .grid-4-mobile-2up{grid-template-columns:1fr 1fr; gap:16px;}
+  .grid-4-mobile-2up .solution-card .body{padding:20px 16px 18px;}
+  .grid-4-mobile-2up .solution-card h3{font-size:1rem;}
+  .grid-4-mobile-2up .solution-card p{font-size:0.86rem; margin-bottom:10px;}
+  .grid-4-mobile-2up .solution-card .icon-badge{width:40px; height:40px; right:12px; bottom:-18px;}
+  .grid-4-mobile-2up .solution-card .icon-badge svg{width:18px; height:18px;}
 }
 
 .pillar-card{
