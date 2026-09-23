@@ -57,7 +57,33 @@
       </div>
     </div>
     <div class="hero-photo-frame">
-      <img src="https://images.pexels.com/photos/11070637/pexels-photo-11070637.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1100" alt="Vibrant stock market charts on a trading screen, showing market data and trends">
+      <svg class="currency-art" viewBox="0 0 560 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Stylised South African Rand banknotes">
+        <defs>
+          <linearGradient id="noteBg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#123054"/>
+            <stop offset="1" stop-color="#081222"/>
+          </linearGradient>
+          <linearGradient id="noteGoldFill" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#E3C387"/>
+            <stop offset="1" stop-color="#B3872E"/>
+          </linearGradient>
+        </defs>
+        <rect width="560" height="700" fill="url(#noteBg)"/>
+        <g transform="translate(60,150) rotate(-9)" opacity="0.9">
+          <rect x="0" y="0" width="400" height="210" rx="16" fill="#0E2038" stroke="#2FA39B" stroke-width="1.4" stroke-opacity="0.55"/>
+          <circle cx="330" cy="105" r="62" fill="none" stroke="#2FA39B" stroke-width="1" stroke-opacity="0.45"/>
+          <text x="30" y="135" font-family="Georgia, serif" font-size="86" fill="#2FA39B" fill-opacity="0.7">R</text>
+          <text x="150" y="42" font-family="Arial, sans-serif" font-size="12" letter-spacing="3" fill="#C7CEDA" fill-opacity="0.55">SOUTH AFRICA &#183; ZAR</text>
+        </g>
+        <g transform="translate(90,330) rotate(5)">
+          <rect x="0" y="0" width="420" height="220" rx="16" fill="#122A47" stroke="#C79A44" stroke-width="1.6"/>
+          <circle cx="350" cy="110" r="66" fill="none" stroke="#C79A44" stroke-width="1" stroke-opacity="0.7"/>
+          <path d="M24 190 H396" stroke="#C79A44" stroke-width="0.6" stroke-opacity="0.4"/>
+          <text x="28" y="140" font-family="Georgia, serif" font-size="92" fill="url(#noteGoldFill)">R</text>
+          <text x="160" y="46" font-family="Arial, sans-serif" font-size="13" letter-spacing="3" fill="#E9EDF4" fill-opacity="0.75">SOUTH AFRICAN RESERVE BANK</text>
+          <text x="330" y="200" font-family="Georgia, serif" font-size="26" fill="#E3C387">200</text>
+        </g>
+      </svg>
       <div class="hero-photo-tag"> 
         <span class="lbl">Structured deal flow</span>
         <span class="val gold">In market</span>
@@ -104,7 +130,7 @@
         <div class="body">
           <span class="index">01</span>
           <h3>Private Credit &amp; Lending</h3>
-          <p>Asset finance, working capital, fleet finance, commercial property and specialised structures — registered with the NCR.</p>
+          <p>Asset finance, working capital, fleet finance, commercial property, our Private Debt Fund and specialised structures — registered with the NCR.</p>
         </div>
       </div>
       <div class="solution-card">
@@ -209,6 +235,11 @@
         </div>
         <p style="max-width:260px;">Capital, applied with intent. A boutique South African private credit, private equity and investment house.</p>
         <p style="color:#5B6372; font-size:0.78rem; margin-top:16px;">Authorised FSP No. 55333 · Registered Credit Provider NCR No. 29734</p>
+        <div class="social-row">
+          <a href="#" aria-label="JODO Capital Partners on LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21H17.4v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96V21H9z"/></svg></a>
+          <a href="#" aria-label="JODO Capital Partners on X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-6.6L5 22H1.8l8-9.2L1 2h7.1l4.9 6.1zM17.6 20h1.9L7.5 4H5.5z"/></svg></a>
+          <a href="#" aria-label="JODO Capital Partners on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg></a>
+        </div>
       </div>
       <div>
         <h4>Navigate</h4>
@@ -226,7 +257,7 @@
         <h4>Contact</h4>
         <p class="placeholder">[Physical address, city]</p>
         <p class="placeholder">[+27 (0) xx xxx xxxx]</p>
-        <p class="placeholder">[info@jodocapital.co.za]</p>
+        <a href="mailto:info@jodocapital.co.za">info@jodocapital.co.za</a>
       </div>
     </div>
     <div class="footer-bottom">
